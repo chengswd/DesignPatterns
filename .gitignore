@@ -1,52 +1,54 @@
-# Prerequisites
-*.d
+# 编译输出目录
+[Bb]in/
+[Oo]bj/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# IDE专属文件
+.idea/
+*.sln.iml
+*.csproj.iml
+*.userprefs
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# 用户特定配置文件
+.vs/
+*.suo
+*.user
+*.userosscache
 
-# Precompiled Headers
-*.gch
-*.pch
+# 日志和临时文件
+[Tt]humbs.db
+*.log
+*.ncb
+*.sdf
+*.cache
+*.dotCover
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# 包管理目录
+packages/
+.nuget/
+[Nn]uGet.Config
+*.nupkg
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# 测试相关
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# 操作系统生成文件
+.DS_Store
+Desktop.ini
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# 编辑器临时文件
+*~
+*.swp
+*.swo
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Rider自动生成文件
+_ReSharper.*
+*.resharper
+
+# MSBuild生成文件
+*.csproj.nuget.*
+ProjectAssets.json
+
+# 排除本地环境配置（如需）
+.env
+.local.env
